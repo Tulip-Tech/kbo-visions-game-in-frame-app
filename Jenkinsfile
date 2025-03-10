@@ -12,11 +12,7 @@ def deploy(servers, branch) {
 }
 
 pipeline {
-    agent {
-        node {
-            label 'docker-node'
-        }
-    }
+    agent any
     stages {
         stage ('Checkout') {
             steps {
