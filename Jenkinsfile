@@ -53,7 +53,7 @@ pipeline {
                     }
                 }
 			}
-        stage ('Deploy to prod') {
+        stage ('deploy to prod') {
             when {
                 branch 'main'
             }
