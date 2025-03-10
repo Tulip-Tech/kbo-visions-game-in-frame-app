@@ -23,7 +23,7 @@ const LandingPageHeader: React.FC = () => {
         <Link to="/book-livestream" className={styles.link}>
           BOOK LIVESTREAM
         </Link>
-        <a className={styles.link} href="https://gameinframe.mfs.gg/QwEb7Oh">
+        <a className={styles.link} href="https://forms.gle/8w2fc9dTLCTcfPsy6">
           BOOK PLAYER HIGHLIGHTS
         </a>
         {/* <a className={styles.link} href="https://shop.gameinframe.com/">
