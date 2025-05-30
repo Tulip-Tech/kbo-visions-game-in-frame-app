@@ -157,43 +157,39 @@ const Layout = () => {
                 </Sidebar>
                 <Outlet />
             </div>
-            {!!footerText && (
-                <div>
-                    <div className={styles.footerContent}>
-                        <div className={styles.linkSection}>
-                            <Link to="/Advertise" className={styles.link}>
-                                Advertise
-                            </Link>
+            <div className={styles.footerContent}>
+                <div className={styles.linkSection}>
+                    <Link to="/Advertise" className={styles.link}>
+                        Advertise
+                    </Link>
 
-                            <Link to="/Abouts" className={styles.link}>
-                                About us
-                            </Link>
+                    <Link to="/Abouts" className={styles.link}>
+                        About us
+                    </Link>
 
-                            <Link to="/Newletters" className={styles.link}>
-                                Newsletters
-                            </Link>
-                        </div>
-                        <div className={styles.linkSection}>
-                            <Link to="/Contacts" className={styles.link}>
-                                Contact us
-                            </Link>
-
-                            <Link to="/Job" className={styles.link}>
-                                Jobs
-                            </Link>
-                        </div>
-                        <div className={styles.linkSection}>
-                            <Link to="/privacy-policy" className={styles.link}>
-                                Privacy Policy
-                            </Link>
-                            <Link to="/terms" className={styles.link}>
-                                Terms of Use
-                            </Link>
-                        </div>
-                    </div>
-                    <MarkdownComponent className={styles.footer} markdownString={footerText} inline />
+                    <Link to="/Newletters" className={styles.link}>
+                        Newsletters
+                    </Link>
                 </div>
-            )}
+                <div className={styles.linkSection}>
+                    <Link to="/Contacts" className={styles.link}>
+                        Contact us
+                    </Link>
+
+                    <Link to="/Job" className={styles.link}>
+                        Jobs
+                    </Link>
+                </div>
+                <div className={styles.linkSection}>
+                    <Link to="/privacy-policy" className={styles.link}>
+                        Privacy Policy
+                    </Link>
+                    <Link to="/terms" className={styles.link}>
+                        Terms of Use
+                    </Link>
+                </div>
+            </div>
+            {!!footerText && <MarkdownComponent className={styles.footer} markdownString={footerText} inline />}
 
             {/* <Link to="/privacy-policy">Privacy-Policy</Link> */}
         </div>
