@@ -19,6 +19,9 @@ const LandingPageFooter: React.FC = () => {
           <a className={styles.link} href="https://player.gameinframe.com/terms">
             TERMS OF USE
           </a>
+          <a className={styles.link} href="https://player.gameinframe.com/jobs">
+            JOBS
+          </a>
         </div>
         <div className={styles.footerDetails}>
           <img src="/images/landingPageHeaderLogo.png" width={150}></img>
